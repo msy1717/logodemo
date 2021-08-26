@@ -8,6 +8,13 @@ import random, re
 import glob
 import time
 from telethon.tl.types import InputMessagesFilterPhotos
+api_id = os.environ.get("API_ID")
+import os, asyncio
+from os import system
+
+api_hash = os.environ.get("API_HASH")
+token = os.environ.get("TOKEN")
+client = TelegramClient('register', api_id, api_hash).start(bot_token=token)
 
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
